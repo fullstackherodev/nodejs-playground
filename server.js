@@ -1,8 +1,8 @@
-const express = require('express');
+import express from 'express';
 const app = express();
-const port = 3000;
+const port = 3001;
 import mongoose from 'mongoose'
-const Book = require('./book');
+import Book from './books.js';
 
 mongoose.connect("mongodb+srv://hello:Mk2UGFVdxmNCvhpV@fullstackhero.2rjab.mongodb.net/")
     .then(() => console.log('Connected to MongoDB...'))
